@@ -30,12 +30,12 @@ function guardar() {
     )
     .then((res) => {
       console.log(res.data)
-      if (res.data === 'Paciente already exists in the database') {
-        // Mostrar la alerta de paciente existente
+      if (res.data === 'Aprendiz existente en la bd') {
+        // Mostrar la alerta que el aprendiz existente
         Swal.fire({
           position: 'top-center',
-          icon: 'warning',
-          title: 'El paciente ya existe en la base de datos.',
+          icon: 'error',
+          title: 'El aprendiz ya existe ya fue registrado ',
           showConfirmButton: false,
           timer: 2000,
         });
