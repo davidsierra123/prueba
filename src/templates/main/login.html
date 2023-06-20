@@ -20,13 +20,14 @@
                         <label>Numero De Identificación</label>
                     </div>
                     <div class="inputbox">
-                        <input style="font-size: 90%;" type="password"  id="Input">
+                        <input style="font-size: 90%;" type="password" id="Input">
                         <label for="">Password</label>
-                        <img src="{{url_for('static', filename='assets/img/ojos.png')}}"  id="Clave"
-                            class="img">
+                        <img src="{{url_for('static', filename='assets/img/ojos.png')}}" id="Clave" class="img">
                     </div>
                     <div class="forget">
 
+                        <a style="color: wheat;" class="sin-linea" href="">Crear cuenta</a>
+                        <a style="color: wheat;" class="sin-linea" href="">¿Olvidaste tu contraseña?</a>
                     </div>
                     <button id="btnlogin" onclick="Login()" type="button">Ingresar</button>
                     <div class="register">
@@ -41,9 +42,11 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="{{url_for('static', filename='JS/validar.js')}}"></script>
 
-    <script>
-        
-    </script>
+<style>
+  .sin-linea {
+    text-decoration: none;
+  }
+</style>
 </body>
 
 </html>
